@@ -1,0 +1,211 @@
+﻿
+@{ ViewBag.Title = "Index";
+                Layout = "~/Views/Shared/_Firstlayout.cshtml"; }
+<center><h1 style="font-family:Calibri">ONLINE MOBILE SHOPPING</h1></center>
+<style>
+
+    .cards {
+        width: 20%;
+        display: inline-block;
+        background-color: white;
+        border-radius: 5px;
+        margin: 65px;
+        box-shadow: 2px 2px 10px black;
+        text-align: center;
+    }
+
+    .image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .des {
+        text-align: center;
+    }
+
+    button {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: white;
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+        button:hover {
+            background-color: hotpink;
+            color: white;
+            transition: .5s;
+        }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider Using HTML and CSS - Easy Tutorials</title>
+    <link href="~/Content/file.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="slider-box">
+        <div id="slider">
+            <img src="~/Content/SNb4AtWM2FKVDkMK9eBJin.jpg" />
+            <img src="~/Content/iphone.jpg" />
+            <img src="~/Content/Pete-Lau-claims-OnePlus-8T-to-be-lag-free-for-3.jpg" />
+            <img src="~/Content/images.jpg" />
+        </div>
+        <div class="indicators">
+            <span id="btn1" class="active"></span>
+            <span id="btn2"></span>
+            <span id="btn3"></span>
+            <span id="btn4"></span>
+        </div>
+    </div>
+
+
+    <script>var slide = document.getElementById("slider");
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        var btn3 = document.getElementById('btn3');
+        var btn4 = document.getElementById('btn4');
+
+        btn1.onclick = function () {
+            slide.style.transform = "translateX(0px)";
+            btn1.classList.add('active');
+            btn2.classList.remove('active');
+            btn3.classList.remove('active');
+            btn4.classList.remive('active');
+        };
+        btn2.onclick = function () {
+            slide.style.transform = "translateX(-100%)";
+            btn1.classList.remove('active');
+            btn2.classList.add('active');
+            btn3.classList.remove('active');
+            btn4.classList.remove('active');
+        };
+        btn3.onclick = function () {
+            slide.style.transform = "translateX(-200%)";
+            btn1.classList.remove('active');
+            btn2.classList.remove('active');
+            btn3.classList.add('active');
+            btn4.classList.remove('active');
+        };
+        btn4.onclick = function () {
+            slide.style.transform = "translateX(-300%)";
+            btn1.classList.remove('active');
+            btn2.classList.remove('active');
+            btn3.classList.remove('active');
+            btn4.classList.add('active');
+        };</script>
+    <div class="cards">
+        <div class="image">
+
+            <img src="~/Content/iphone 11.jpg" />
+        </div>
+
+        <div class="title">
+
+            <h4>Iphone 11</h4>
+        </div>
+        <div class="des">
+            <p>Price:100000</p>
+            <input type="button" value="Buy now " onclick="location.href='@Url.Action("Userlogin","Login")'"/>
+         
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="image">
+            <img src="~/Content/iphone.jpg" />
+        </div>
+
+        <div class="title">
+
+            <h4>Iphone</h4>
+        </div>
+        <div class="des">
+            <p>Price:180000</p>
+            <input type="button" value="Buy now " onclick="location.href='@Url.Action("Userlogin","Login")'" />
+
+        </div>
+    </div>
+    <div class="cards">
+        <div class="image">
+
+
+
+            <img src="~/Content/iphone-12-red-select-2020.jpg" />
+        </div>
+
+        <div class="title">
+
+            <h4>Iphone 12</h4>
+        </div>
+        <div class="des">
+            <p>Price:80000</p>
+            <input type="button" value="Buy now " onclick="location.href='@Url.Action("Userlogin","Login")'" />
+           
+        </div>
+    </div>
+    <div class="cards">
+        <div class="image">
+            <img src="~/Content/Galaxy-A60-featured.jpg" />
+
+
+            
+        </div>
+
+        <div class="title">
+
+            <h4>Samsung Galaxy A60</h4>
+        </div>
+        <div class="des">
+            <p>Price:25000</p>
+            <input type="button" value="Buy now " onclick="location.href='@Url.Action("Userlogin","Login")'" />
+
+        </div>
+    </div>
+    <div class="cards">
+        <div class="image">
+
+            <img src="~/Content/One plus.jpg" />
+        </div>
+
+        <div class="title">
+
+            <h4>Oneplus</h4>
+        </div>
+        <div class="des">
+            <p>Price:35000</p>
+            <input type="button" value="Buy now " onclick="location.href='@Url.Action("Userlogin","Login")'" />
+
+        </div>
+    </div>
+    <div class="cards">
+        <div class="image">
+
+
+            <img src="~/Content/Oppo-F17.jpg" />
+        </div>
+
+        <div class="title">
+
+            <h4>Oppo F17</h4>
+        </div>
+        <div class="des">
+            <p>Price:1300</p>
+            <button onclick="document.location='/Login/Userlogin'">Buy Now</button>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
