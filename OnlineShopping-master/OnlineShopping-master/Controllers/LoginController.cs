@@ -30,7 +30,6 @@ namespace OnlineShopping.Controllers
                 loginpage.Username = Ulogin.Username;
                 loginpage.Password = Ulogin.Password;
                 db.Loginpages.Add(loginpage);
-                db.SaveChanges();
                 db.Logins.Add(Ulogin);
                 db.SaveChanges();
                 Session["Username"] = Ulogin.Username.ToString();
