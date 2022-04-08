@@ -35,8 +35,12 @@ public int Salary
     }  
 }  
                        
-                      
-                       
+//partial view in mvc 
+            
+public ActionResult PartialViewExample()  
+{  
+    return PartialView();  
+}                       
                      
 
 
