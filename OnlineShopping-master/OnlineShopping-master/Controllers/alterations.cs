@@ -13,7 +13,31 @@ if (Session["FirstName"]!= null)
 }  
 
 
+//camel case
 
+public string GetPosts(string postId  
+{  
+   int numberOfPost = 0;   
+}
+
+//Pascal case naming convention
+
+private int _salary = 100;  
+public int Salary  
+{  
+    get  
+    {  
+        return _salary;  
+    }  
+    set  
+    {  
+        _salary = value;  
+    }  
+}  
+                       
+                      
+                       
+                     
 
 
 
